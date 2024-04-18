@@ -5,6 +5,7 @@ Aplicación Web de Reconocimiento Facial con Flask y OpenCV
 ## Descripción
 
 Esta es una aplicación web desarrollada con Flask y OpenCV que utiliza el reconocimiento facial para detectar rostros en tiempo real a través de la cámara web del usuario.
+El proyecto aun se encuentra en desarrollo
 
 ## Características
 
