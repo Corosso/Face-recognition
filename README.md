@@ -1,10 +1,11 @@
 # Nombre del Proyecto
 
-Aplicación Web de Reconocimiento Facial con Flask y OpenCV
+Aplicación Web de Reconocimiento Facial con Flask y OpenCV. Tambien se usaron plantillas de Boostrap
 
 ## Descripción
 
 Esta es una aplicación web desarrollada con Flask y OpenCV que utiliza el reconocimiento facial para detectar rostros en tiempo real a través de la cámara web del usuario.
+
 El proyecto aun se encuentra en desarrollo
 
 ## Características
