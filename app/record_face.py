@@ -1,10 +1,9 @@
-from flask import request
-
+from flask import request, Response, Flask
 
 import cv2
 
 import csv
-
+app = Flask(__name__)
 def guardar_registro(numero_identificacion, ruta_imagen):
     with open('records.csv', 'a', newline='') as archivo:
         escritor = csv.writer(archivo)
@@ -16,6 +15,7 @@ def registrar_cara(numero_identificacion):
 
     # Cargar el clasificador de rostros pre-entrenado
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+    ruta_imagen='records.csv'
 
     while True:
         # Capturar frame por frame
@@ -50,7 +50,7 @@ if __name__ == "__main__":
     numero_identificacion = input("Ingrese el número de identificación para esta cara: ")
     registrar_cara(numero_identificacion)
 
-@app.route('/registrar_rostro', methods=['POST'])
+@app.route('/record_face', methods=['POST'])
 def registrar_rostro():
     numero_identificacion = request.form['numero_identificacion']
     # Llama a la función para registrar el rostro con el número de identificación
