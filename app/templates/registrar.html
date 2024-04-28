@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrar Rostro</title>
+</head>
+<body>
+    <h1>Registrar Rostro</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    <form action="/registrar_rostro" method="post">
+        <label for="numero_identificacion">Número de Identificación:</label>
+        <input type="text" id="numero_identificacion" name="numero_identificacion" required>
+        <button type="submit">Registrar Rostro</button>
+    </form>
+</body>
+</html>

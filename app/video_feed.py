@@ -9,7 +9,7 @@ cap = cv2.VideoCapture(0)
 # Cargar el clasificador de rostros pre-entrenado
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
-def reconocimiento_facial():
+def reconocimiento_facial(cap, face_cascade):
     while True:
         # Capturar frame por frame
         ret, frame = cap.read()
@@ -35,9 +35,9 @@ def reconocimiento_facial():
 def index():
     return render_template('index.html')
 
-@app.route('/video_feed')
-def video_feed():
-    return Response(reconocimiento_facial(), mimetype='multipart/x-mixed-replace; boundary=frame')
+@app.route('/video_feed_route')
+def video_feed_route(cap, face_cascade):
+    return Response(reconocimiento_facial(cap, face_cascade), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == '__main__':
     app.run(debug=True)

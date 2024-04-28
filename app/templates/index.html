@@ -11,15 +11,7 @@
         <p class="lead">Interfaz de usuario para el reconocimiento facial.</p>
     </div>
     <img src="{{ url_for('video_feed') }}" />
-    <body>
-        <h1>Registro de Rostros</h1>
-        <form action="/record_face" method="post">
-            <label for="numero_identificacion">Número de Identificación:</label>
-            <input type="text" id="numero_identificacion" name="numero_identificacion" required>
-            <button type="submit">Registrar Rostro</button>
-        </form>
-        <!-- Agrega cualquier otro contenido necesario aquí -->
-    </body>
+    <a href="/registrar">Registrar Rostro</a>
     </html>
 </body>
 </html>
