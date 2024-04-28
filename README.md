@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 1. Ejecuta la aplicación Flask:
 
-python video_feed.py
+python app.py
 
 2. Abre tu navegador web y accede a la URL `http://localhost:5000`.
 3. La aplicación mostrará la vista del reconocimiento facial en tiempo real utilizando tu cámara web.
