@@ -1,37 +1,33 @@
-# Nombre del Proyecto
+## Facial Recognition Project with OpenCV and Flask
+## Description: 
 
-Aplicación Web de Reconocimiento Facial con Flask y OpenCV. Tambien se usaron plantillas de Boostrap
+I developed a facial recognition system using Python, OpenCV, and Flask. This project aims to detect and recognize faces in real-time through a webcam and provide a web interface for registering new faces into the system.
 
-## Descripción
+## Features:
+•	Uses OpenCV, a computer vision library, for real-time face detection and recognition.
 
-Esta es una aplicación web desarrollada con Flask y OpenCV que utiliza el reconocimiento facial para detectar rostros en tiempo real a través de la cámara web del usuario.
+•	The web application is built with Flask, a lightweight Python web framework.
 
-El proyecto aun se encuentra en desarrollo
+•	Allows users to register new faces into the system by entering an associated identification number.
 
-## Características
+•	Stores face records in local files for further use and analysis.
 
-- Detección de rostros en tiempo real
-- Interfaz de usuario sencilla y fácil de usar
-- Integración con Flask para el backend
-- Utiliza la biblioteca OpenCV para el reconocimiento facial
+## Technologies Used:
 
-## Instalación
+•	Python
 
-1. Clona este repositorio en tu máquina local:
-git clone <(https://github.com/Corosso/Face-recognition)>
+•	OpenCV
 
+•	Flask
 
-2. Instala las dependencias necesarias:
+•	HTML/CSS (for the web interface)
 
-pip install -r requirements.txt
+## Contribution:
 
-## Uso
+•	I developed the project from start to finish, including designing and implementing the facial recognition logic, the web interface, and record storage.
 
-1. Ejecuta la aplicación Flask:
+•	Implemented computer vision techniques for face detection and recognition using OpenCV.
 
-python app.py
-
-2. Abre tu navegador web y accede a la URL `http://localhost:5000`.
-3. La aplicación mostrará la vista del reconocimiento facial en tiempo real utilizando tu cámara web.
-
+•	Designed a simple and user-friendly web interface using Flask for registering new faces.
+This project demonstrated my skills in Python programming, web development with Flask, and image processing and computer vision with OpenCV. Additionally, it showcases my ability to develop creative and practical solutions for real-world problems using modern technologies.
 
