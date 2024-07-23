@@ -2,14 +2,20 @@
 <html>
 <head>
     <title>Registrar Rostro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Registrar Rostro</h1>
-    <img src="{{ url_for('video_feed') }}" width="640" height="480">
-    <form action="/registrar_rostro" method="post">
-        <label for="numero_identificacion">Número de Identificación:</label>
-        <input type="text" id="numero_identificacion" name="numero_identificacion" required>
-        <button type="submit">Registrar Rostro</button>
-    </form>
+    <div class="container">
+        <h1>Registrar Rostro</h1>
+        <img src="{{ url_for('video_feed') }}" width="640" height="480">
+        <form action="/registrar_rostro" method="post">
+            <div class="form-group">
+                <label for="numero_identificacion">Número de Identificación:</label>
+                <input type="text" id="numero_identificacion" name="numero_identificacion" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar Rostro</button>
+        </form>
+        <a href="/" class="btn btn-secondary mt-3">Volver a la página principal</a>
+    </div>
 </body>
 </html>
